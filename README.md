@@ -1,3 +1,45 @@
+## Optimizations in index.html for increasing page speed score
+1. Added async attribute to perfmatters.js script tag.
+2. Added media="print"  to link tag with print.ccs
+3. Compressed profilepic.jpg
+4. Compressed 2048.jpg
+5. Compressed webperf.jpg
+6. Compressed mobiledev.jpg
+7. Compressed pizzeria.jpg
+8. Minified perfmatters.js
+9. minified style.css
+10. minified print.css
+11. minified index.html
+12. deferred style.css at the end of body.
+
+## Optimizations in views/js/main.js to hit 60 fps
+1. Refactored updatePositions function by removing unnecessary calculations and simplifying the for-loop.
+2. Refactored changePizzaSizes function by removing unnecessary calculations and removed fsl.
+3. Manually assigned the width in changePizzaSizes function removing the unnecessary dx calculation.
+4. Assigned pizzasDiv outside for-loop for only one DOM call.
+5. Calculated scrollPosition outside the for-loop.
+6. Calculated movingPizzas outside for-loop.
+
+## Optimizations in views/css/style.css to hit 60 fps
+1. minified style.css
+2. Added transform: translateZ() to mover.
+3. Added backface-visibility: hidden; and transform: translateZ()  property to randomPizzaContainer.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ## Website Performance Optimization portfolio project
 
 Your challenge, if you wish to accept it (and we sure hope you will), is to optimize this online portfolio for speed! In particular, optimize the critical rendering path and make this page render as quickly as possible by applying the techniques you've picked up in the [Critical Rendering Path course](https://www.udacity.com/course/ud884).
